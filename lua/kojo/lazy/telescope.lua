@@ -7,8 +7,28 @@ return {
 		"nvim-lua/plenary.nvim"
 	},
 
+	init = function()
+		if not vim.treesitter.language.ft_to_lang then
+			vim.treesitter.language.ft_to_lang = function(ft)
+				return vim.treesitter.language.get_lang(ft)
+				or (vim.filetype and vim.filetype.match and vim.filetype.match({ buf = 0 }))
+				or ft
+			end
+		end
+	end,
+
 	config = function()
-		require('telescope').setup({})
+		vim.treesitter.language.ft_to_lang = vim.treesitter.language.ft_to_lang 
+			or function(ft) return ft end
+
+		require("telescope").setup({
+			defaults = {
+				previewer = true,
+				preview = {
+					treesitter = false  -- disable ts previewing, use regex instead
+				}
+			}
+		})
 
 		local builtin = require('telescope.builtin')
 		vim.keymap.set('n', '<leader>pf', builtin.find_files, {})

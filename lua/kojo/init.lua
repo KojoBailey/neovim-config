@@ -1,4 +1,5 @@
 require("kojo.remap")
+require("kojo.indent")
 require("kojo.lazy_init")
 
 print("Welcome back to Neovim, Kojo Bailey.")

@@ -14,6 +14,12 @@ return {
 			"html",
 			"lua",
 			"asm",
+			"cpp",
+			"c",
+			"rust",
+			"haskell",
+			"ocaml",
+			"ocaml_interface",
 		})
 
 		-- 2. Manually enable Treesitter indentation for the current buffer
@@ -29,5 +35,9 @@ return {
 				vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
 			end,
 		})
+
+		require("nvim-treesitter.parsers").ft_to_lang = function(ft)
+			return vim.treesitter.language.get_lang(ft) or ft
+		end
 	end
 }
