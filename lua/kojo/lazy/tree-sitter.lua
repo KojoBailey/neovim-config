@@ -20,6 +20,7 @@ return {
 			"haskell",
 			"ocaml",
 			"ocaml_interface",
+			"java",
 		})
 
 		-- 2. Manually enable Treesitter indentation for the current buffer
