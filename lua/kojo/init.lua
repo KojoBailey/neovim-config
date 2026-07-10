@@ -27,6 +27,6 @@ vim.opt.relativenumber = true
 
 vim.opt.termguicolors = true
 
-vim.opt.scrolloff = 8
+vim.opt.scrolloff = 4
 
 vim.g.undotree_DiffCommand = "C:/Program Files/Git/usr/bin/diff.exe"
