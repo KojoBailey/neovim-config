@@ -18,7 +18,7 @@ return {
 				"java", "typescript", "javascript", "tsx",
 				"html", "lua", "rust", "cpp", "c",
 				"haskell", "ocaml", "ocaml_interface", "asm",
-				"c3", "nim", "fsharp",
+				"c3", "nim", "fsharp", "yaml",
 			},
 			highlight = { enable = true },
 		})
