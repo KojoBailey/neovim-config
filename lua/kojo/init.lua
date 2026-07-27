@@ -1,6 +1,5 @@
-require("kojo.remap")
-require("kojo.indent")
-require("kojo.lazy_init")
+require("kojo.core")
+require("kojo.lazy")
 
 print("Welcome back to Neovim, Kojo Bailey.")
 
@@ -21,12 +20,5 @@ if vim.fn.has("persistent_undo") == 1 then
     vim.opt.undodir = target_path
     vim.opt.undofile = true
 end
-
-vim.opt.number = true
-vim.opt.relativenumber = true
-
-vim.opt.termguicolors = true
-
-vim.opt.scrolloff = 4
 
 vim.g.undotree_DiffCommand = "C:/Program Files/Git/usr/bin/diff.exe"
