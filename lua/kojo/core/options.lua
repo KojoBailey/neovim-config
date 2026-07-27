@@ -5,7 +5,9 @@ vim.opt.termguicolors = true -- Support full 24-bit colours.
 
 vim.opt.relativenumber = true -- Show relative line numbers.
 vim.opt.number = true -- Show line number for selected line.
-vim.opt.signcolumn = "number" -- Column for special signs (git/LSP/etc.).
+vim.opt.signcolumn = "yes" -- Column for special signs (git/LSP/etc.).
+	-- "auto": Show when in use.
+	-- "yes": Always show.
 	-- "number": Merge with number column.
 
 vim.opt.wrap = false -- Enable text wrapping.
