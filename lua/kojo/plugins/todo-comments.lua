@@ -40,7 +40,7 @@ return {
 		require("todo-comments").setup(opts)
 		vim.keymap.set(
 			"n",
-			"<leader>ptf",
+			"<leader>pcf",
 			"<cmd>TodoTelescope<CR>"
 		)
 	end,
