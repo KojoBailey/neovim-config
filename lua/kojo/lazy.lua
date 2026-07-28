@@ -29,9 +29,9 @@ require("lazy").setup({
 		{ import = "kojo.plugins.mason" },
 		{ import = "kojo.plugins.surround" },
 		{ import = "kojo.plugins.telescope" },
-		{ import = "kojo.plugins.todo-comments" }, -- TODO: Customise styling.
-		{ import = "kojo.plugins.treesitter" }, -- FIX: Markdown.
-		{ import = "kojo.plugins.treesj" }, -- TODO: Reconfigure keybinds.
+		{ import = "kojo.plugins.todo-comments" },
+		{ import = "kojo.plugins.treesitter" }, -- BUG: Markdown.
+		{ import = "kojo.plugins.treesj" },
 		{ import = "kojo.plugins.undotree" },
 		{ import = "kojo.plugins.zdiff" }, -- TODO: Reconfigure keybinds.
 	},
