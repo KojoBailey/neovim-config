@@ -24,6 +24,7 @@ require("lazy").setup({
 		{ import = "kojo.plugins.fugitive" }, -- TODO: Figure out how to use effectively.
 		-- { import = "kojo.plugins.godot" }, -- TODO: Re-evaluate.
 		{ import = "kojo.plugins.harpoon" }, -- TODO: Make more efficient.
+		{ import = "kojo.plugins.lazydev" },
 		{ import = "kojo.plugins.lualine" }, -- TODO: Customise for fun.
 		{ import = "kojo.plugins.markview" }, -- TODO: Consider changing keybinds.
 		{ import = "kojo.plugins.mason" },

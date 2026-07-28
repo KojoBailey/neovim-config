@@ -1,6 +1,17 @@
 return {
+	-- https://luals.github.io/wiki/settings/
 	settings = {
 		Lua = {
+			hint = {
+				enable = true,
+				arrayIndex = "Enable",
+				await = true,
+				awaitPropogate = false,
+				paramName = "All",
+				paramType = true,
+				semicolon = "SameLine",
+				setType = true,
+			},
 			diagnostics = {
 				globals = { "vim" },
 			},
