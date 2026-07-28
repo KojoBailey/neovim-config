@@ -1,3 +1,4 @@
+-- Split and join blocks of code easily.
 return {
 	'Wansmer/treesj',
 	keys = { '<space>m', '<space>j', '<space>s' },

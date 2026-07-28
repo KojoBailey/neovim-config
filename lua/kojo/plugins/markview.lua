@@ -1,3 +1,4 @@
+-- Preview Markdown, HTML, LaTeX, and others.
 return {
 	"OXY2DEV/markview.nvim",
 	lazy = false,

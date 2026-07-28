@@ -1,4 +1,7 @@
-vim.cmd("let g:netrw_liststyle = 3") -- Set file explorer default view (0-3).
+vim.cmd("let g:netrw_liststyle = 0") -- Set file explorer default view (0-3).
+	-- 0 = alphabetical
+	-- 1 = date
+	-- 2 = inline
 	-- 3 = tree
 
 vim.opt.termguicolors = true -- Support full 24-bit colours.

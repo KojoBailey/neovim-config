@@ -20,5 +20,3 @@ if vim.fn.has("persistent_undo") == 1 then
     vim.opt.undodir = target_path
     vim.opt.undofile = true
 end
-
-vim.g.undotree_DiffCommand = "C:/Program Files/Git/usr/bin/diff.exe"

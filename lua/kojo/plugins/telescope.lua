@@ -18,7 +18,7 @@ return {
 	end,
 
 	config = function()
-		vim.treesitter.language.ft_to_lang = vim.treesitter.language.ft_to_lang 
+		vim.treesitter.language.ft_to_lang = vim.treesitter.language.ft_to_lang
 			or function(ft) return ft end
 
 		require("telescope").setup({
