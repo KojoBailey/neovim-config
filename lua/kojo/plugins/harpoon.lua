@@ -1,3 +1,4 @@
+-- Switch between hot buffers without tabs.
 return {
 	"ThePrimeagen/harpoon",
 	branch = "harpoon2",

@@ -1,3 +1,4 @@
+-- Easy, LSP-assisted text completion.
 return {
 	"saghen/blink.cmp",
 	dependencies = {

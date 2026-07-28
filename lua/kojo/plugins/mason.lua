@@ -1,3 +1,4 @@
+-- Make LSP management simple.
 return {
 	"mason-org/mason.nvim",
 	dependencies = {

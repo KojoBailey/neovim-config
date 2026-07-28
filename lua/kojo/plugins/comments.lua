@@ -1,3 +1,4 @@
+-- Toggle code as comments via keybinds.
 return {
   {
     "JoosepAlviste/nvim-ts-context-commentstring",

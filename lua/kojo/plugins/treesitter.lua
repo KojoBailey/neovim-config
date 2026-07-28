@@ -1,3 +1,4 @@
+-- Improve syntax highlighting and code formatting capabilities.
 return {
 	"nvim-treesitter/nvim-treesitter",
 	branch = "master",

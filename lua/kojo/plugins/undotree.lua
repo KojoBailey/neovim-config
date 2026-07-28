@@ -1,3 +1,4 @@
+-- Navigate undo history via a natural tree structure.
 return {
 	"mbbill/undotree",
 	config = function()

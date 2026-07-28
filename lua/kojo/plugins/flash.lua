@@ -1,3 +1,4 @@
+-- Jump to specific points in a file quickly.
 return {
 	"folke/flash.nvim",
 	event = "VeryLazy",

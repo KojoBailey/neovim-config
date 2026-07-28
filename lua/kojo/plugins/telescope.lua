@@ -1,3 +1,4 @@
+-- Use fuzzy search to jump to files and grep file content.
 return {
 	"nvim-telescope/telescope.nvim",
 

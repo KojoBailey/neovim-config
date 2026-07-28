@@ -1,3 +1,4 @@
+-- Toggle non-intrusive file tree.
 return {
 	"nvim-tree/nvim-tree.lua",
 	dependencies = {
