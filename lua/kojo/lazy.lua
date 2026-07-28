@@ -15,7 +15,7 @@ require("lazy").setup({
 	spec = {
 		{ import = "kojo.themes" },
 
-		{ import = "kojo.plugins.alpha" }, -- TODO: Customise for fun.
+		{ import = "kojo.plugins.alpha" },
 		-- { import = "kojo.plugins.cmp" }, -- FIX: Doesn't seem to work at all.
 		{ import = "kojo.plugins.colorizer" },
 		{ import = "kojo.plugins.comments" }, -- TODO: Add keybinds/commands for auto-adding tagged comments.
