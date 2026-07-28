@@ -7,6 +7,6 @@ return {
 			vim.g.undotree_DiffCommand = "diff"
 		end
 
-		vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
+		vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 	end
 }
