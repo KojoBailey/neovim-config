@@ -89,6 +89,11 @@ return {
 			"<cmd>Explore<CR>"
 		),
 		dashboard.button(
+			"g",
+			" > Show git diff",
+			"<cmd>Zdiff<CR>"
+		),
+		dashboard.button(
 			"q",
 			" > Quit Neovim",
 			"<cmd>qa<CR>"
