@@ -34,6 +34,7 @@ require("lazy").setup({
 		{ import = "kojo.plugins.treesitter" }, -- FIX: Markdown.
 		{ import = "kojo.plugins.treesj" }, -- TODO: Reconfigure keybinds.
 		{ import = "kojo.plugins.undotree" },
+		{ import = "kojo.plugins.zdiff" }, -- TODO: Reconfigure keybinds.
 	},
 	change_detection = { notify = false },
 })
