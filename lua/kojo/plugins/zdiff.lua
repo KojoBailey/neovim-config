@@ -5,12 +5,12 @@ return {
 
 	keys = {
 		{
-			"<leader>zd",
+			"<leader>gd",
 			function() require("zdiff").open() end,
 			desc = "Zdiff (uncommitted)",
 		},
 		{
-			"<leader>zD",
+			"<leader>gD",
 			function() require("zdiff").open("main") end,
 			desc = "Zdiff (vs main)",
 		},
