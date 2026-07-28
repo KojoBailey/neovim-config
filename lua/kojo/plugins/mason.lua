@@ -22,6 +22,13 @@ return {
 				"clangd",
 				"rust_analyzer",
 			},
+			handlers = {
+				function(server)
+					vim.lsp.config[server].setup({
+						capabilities = require("blink.cmp").get_lsp_capabilities()
+					})
+				end,
+			},
 		})
 	end,
 }

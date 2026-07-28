@@ -23,4 +23,5 @@ vim.opt.cursorlineopt = "number"
 
 vim.opt.clipboard:append("unnamedplus") -- Yank, etc. to clipboard by default.
 
-vim.opt.autocomplete = true -- Show autocomplete by default.
+-- Conflicts with blink.cmp.
+vim.opt.autocomplete = false -- Show autocomplete by default.

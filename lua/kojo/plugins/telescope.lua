@@ -25,25 +25,29 @@ return {
 			defaults = {
 				previewer = true,
 				preview = {
-					treesitter = false  -- disable ts previewing, use regex instead
+					treesitter = false  -- disable treesitter previewing, use regex instead
 				}
 			}
 		})
 
 		local builtin = require("telescope.builtin")
+		-- Search all files.
 		vim.keymap.set("n", "<leader>pf", builtin.find_files, {})
-		vim.keymap.set("n", "<C-p>", builtin.git_files, {})
-		vim.keymap.set("n", "<leader>pws", function()
-			local word = vim.fn.expand("<cword>")
-			builtin.grep_string({ search = word })
-		end)
-		vim.keymap.set("n", "<leader>pWs", function()
-			local word = vim.fn.expand("<cWORD>")
-			builtin.grep_string({ search = word })
-		end)
+		-- Search Git files.
+		vim.keymap.set("n", "<leader>pgf", builtin.git_files, {})
+		-- Grep all files.
 		vim.keymap.set("n", "<leader>ps", function()
 			builtin.grep_string({ search = vim.fn.input("Grep > ") })
 		end)
+		-- Grep current selection across all files.
+		vim.keymap.set("v", "<leader>ps", function()
+			local register_save = vim.fn.getreg("v");
+			vim.cmd('noau normal! "vy')
+			local selection = vim.fn.getreg("v")
+			vim.fn.setreg("v", register_save)
+			builtin.grep_string({ search = selection:gsub("\n", "") })
+		end)
+		-- Search help files.
 		vim.keymap.set("n", "<leader>vh", builtin.help_tags, {})
 	end
 }

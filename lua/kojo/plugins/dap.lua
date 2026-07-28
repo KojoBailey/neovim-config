@@ -1,3 +1,4 @@
+-- In-editor debugger.
 return {
 	"mfussenegger/nvim-dap",
 

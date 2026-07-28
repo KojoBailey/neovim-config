@@ -4,7 +4,7 @@ return {
 		Lua = {
 			hint = {
 				enable = true,
-				arrayIndex = "Enable",
+				arrayIndex = "Disable",
 				await = true,
 				awaitPropogate = false,
 				paramName = "All",
