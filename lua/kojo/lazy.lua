@@ -27,6 +27,7 @@ require("lazy").setup({
 		{ import = "kojo.plugins.lualine" },
 		{ import = "kojo.plugins.markview" },
 		{ import = "kojo.plugins.mason" },
+		{ import = "kojo.plugins.presence" },
 		{ import = "kojo.plugins.surround" },
 		{ import = "kojo.plugins.telescope" },
 		{ import = "kojo.plugins.todo-comments" },
