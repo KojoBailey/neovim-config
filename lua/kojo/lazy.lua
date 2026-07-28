@@ -30,6 +30,7 @@ require("lazy").setup({
 		{ import = "kojo.plugins.surround" },
 		{ import = "kojo.plugins.telescope" },
 		{ import = "kojo.plugins.todo-comments" },
+		{ import = "kojo.plugins.tree" },
 		{ import = "kojo.plugins.treesitter" }, -- BUG: Markdown.
 		{ import = "kojo.plugins.treesj" },
 		{ import = "kojo.plugins.undotree" },
