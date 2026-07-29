@@ -100,9 +100,34 @@ return {
 		),
     }
 
+	local cwd_section = {
+		type = "text",
+		val = vim.fn.fnamemodify(vim.fn.getcwd(), ":~"),
+		opts = {
+			hl = "Comment",
+			position = "center",
+		},
+	}
+
+	dashboard.config.layout = {
+		{ type = "padding", val = 2 },
+		dashboard.section.header,
+		{ type = "padding", val = 1 },
+		cwd_section,
+		{ type = "padding", val = 1 },
+		dashboard.section.buttons,
+	}
+
     alpha.setup(dashboard.opts)
 
-    -- Disable folding on alpha buffe.r
-    vim.cmd([[autocmd FileType alpha setlocal nofoldenable]])
+	-- Refresh on directory change.
+	vim.api.nvim_create_autocmd("DirChanged", {
+		callback = function()
+			cwd_section.val = vim.fn.getcwd()
+			if vim.bo.filetype == "alpha" then
+				require("alpha").redraw()
+			end
+		end,
+	})
   end,
 }
