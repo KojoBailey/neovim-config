@@ -86,7 +86,7 @@ return {
 		dashboard.button(
 			"e",
 			" > Toggle file explorer",
-			"<cmd>Explore<CR>"
+			"<cmd>NvimTreeToggle<CR>"
 		),
 		dashboard.button(
 			"g",
