@@ -22,6 +22,7 @@ return {
 				"lua_ls",
 				"clangd",
 				"rust_analyzer",
+				"bashls",
 			},
 			handlers = {
 				function(server)
