@@ -8,7 +8,7 @@ return {
 				await = true,
 				awaitPropogate = false,
 				paramName = "All",
-				paramType = true,
+				paramType = false,
 				semicolon = "SameLine",
 				setType = true,
 			},
