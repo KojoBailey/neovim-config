@@ -8,9 +8,9 @@ return {
 				await = true,
 				awaitPropogate = false,
 				paramName = "All",
-				paramType = false,
+				paramType = true,
 				semicolon = "SameLine",
-				setType = true,
+				setType = false,
 			},
 			diagnostics = {
 				globals = { "vim", "hl" },
