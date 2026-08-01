@@ -27,6 +27,7 @@ require("lazy").setup({
 		{ import = "kojo.plugins.lualine" },
 		{ import = "kojo.plugins.markview" },
 		{ import = "kojo.plugins.mason" },
+		{ import = "kojo.plugins.oil" },
 		{ import = "kojo.plugins.overseer" },
 		{ import = "kojo.plugins.presence" },
 		{ import = "kojo.plugins.smear_cursor" },
