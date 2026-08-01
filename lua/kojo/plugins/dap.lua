@@ -5,22 +5,26 @@ return {
 	config = function()
 		local dap = require("dap")
 
-		dap.adapters.codelldb = {
+		dap.adapters.lldb = {
 			type = "executable",
-			command = "codelldb",
+			command = "lldb-dap",
+			name = "lldb",
 		}
 
 		dap.configurations.cpp = {
 			{
 				name = "Launch",
-				type = "codelldb",
+				type = "lldb",
 				request = "launch",
 				program = function()
 					return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
 				end,
 				cwd = "${workspaceFolder}",
 				stopOnEntry = false,
+				args = {},
 			},
 		}
+		dap.configurations.c = dap.configurations.cpp
+		dap.configurations.rust = dap.configurations.cpp
 	end,
 }
