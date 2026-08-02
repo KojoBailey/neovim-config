@@ -26,5 +26,8 @@ vim.opt.clipboard:append("unnamedplus") -- Yank, etc. to clipboard by default.
 -- Conflicts with blink.cmp.
 vim.opt.autocomplete = false -- Show autocomplete by default.
 
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
 vim.api.nvim_create_user_command("Build", "!./build.sh", {})
 vim.api.nvim_create_user_command("Run", "!./run.sh", {})
