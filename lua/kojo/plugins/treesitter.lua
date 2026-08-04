@@ -1,45 +1,31 @@
 -- Improve syntax highlighting and code formatting capabilities.
 return {
 	"nvim-treesitter/nvim-treesitter",
-	branch = "master",
-	lazy = false,
+	branch = "main",
 	build = ":TSUpdate",
 
 	config = function()
-		require("nvim-treesitter.parsers").get_parser_configs().c3 = {
-			install_info = {
-				url = "https://github.com/c3lang/tree-sitter-c3",
-				files = { "src/parser.c", "src/scanner.c" },
-				branch = "main",
-			},
-			filetype = "c3",
-		}
+		-- require("nvim-treesitter.parsers").get_parser_configs().c3 = {
+		-- 	install_info = {
+		-- 		url = "https://github.com/c3lang/tree-sitter-c3",
+		-- 		files = { "src/parser.c", "src/scanner.c" },
+		-- 		branch = "main",
+		-- 	},
+		-- 	filetype = "c3",
+		-- }
 
-		require("nvim-treesitter.configs").setup({
-			ensure_installed = {
-				"asm",
+		require("nvim-treesitter").install({
 				"bash",
 				"c",
 				"cpp",
-				"fsharp",
-				"haskell",
 				"html",
-				"java",
-				"javascript",
 				"lua",
 				"markdown",
 				"markdown_inline",
-				"nim",
-				"ocaml",
-				"ocaml_interface",
 				"rust",
-				"tsx",
-				"typescript",
 				"yaml",
-			},
-			highlight = { enable = true },
 		})
 
-		vim.filetype.add({ extension = { c3 = "c3" } })
+		-- vim.filetype.add({ extension = { c3 = "c3" } })
 	end,
 }

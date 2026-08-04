@@ -1,0 +1,62 @@
+return {
+	"obsidian-nvim/obsidian.nvim",
+	version = "*",
+	lazy = true,
+	event = { "BufReadPre *.md", "BufNewFile *.md" },
+	cmd = {
+		"ObsidianBacklinks",
+		"ObsidianDailies",
+		"ObsidianExtractNote",
+		"ObsidianFollowLink",
+		"ObsidianLink",
+		"ObsidianLinkNew",
+		"ObsidianLinks",
+		"ObsidianNew",
+		"ObsidianNewFromTemplate",
+		"ObsidianOpen",
+		"ObsidianPasteImg",
+		"ObsidianQuickSwitch",
+		"ObsidianRename",
+		"ObsidianSearch",
+		"ObsidianTags",
+		"ObsidianTemplate",
+		"ObsidianToday",
+		"ObsidianToggleCheckbox",
+		"ObsidianTOC",
+	},
+	keys = {
+		{ "<leader>ob", "<cmd>ObsidianBacklinks<CR>", desc = "Obsidian backlinks" },
+		{ "<leader>od", "<cmd>ObsidianToday<CR>", desc = "Obsidian daily note" },
+		{ "<leader>ol", "<cmd>ObsidianLinks<CR>", desc = "Obsidian note links" },
+		{ "<leader>oo", "<cmd>ObsidianOpen<CR>", desc = "Open in Obsidian" },
+		{ "<leader>oq", "<cmd>ObsidianQuickSwitch<CR>", desc = "Obsidian quick switch" },
+		{ "<leader>os", "<cmd>ObsidianSearch<CR>", desc = "Search Obsidian notes" },
+		{ "<leader>ot", "<cmd>ObsidianTemplate<CR>", desc = "Insert Obsidian template" },
+		{ "<leader>oT", "<cmd>ObsidianTOC<CR>", desc = "Obsidian table of contents" },
+	},
+	dependencies = {
+		"nvim-lua/plenary.nvim",
+		"nvim-telescope/telescope.nvim",
+		"hrsh7th/nvim-cmp",
+	},
+	opts = {
+		workspaces = {
+			{
+				name = "main",
+				path = "~/Documents/Brainlet/"
+			},
+		},
+		frontmatter = {
+			enabled = false,
+		},
+		daily_notes = {
+			enabled = false,
+			folder = "Diary",
+			date_format = "YYYY-MM-DD - ddd, MMMM D",
+			template = "Templates/Diary",
+			default_tags = {},
+			workdays_only = false,
+			alias_format = nil,
+		},
+	},
+}
