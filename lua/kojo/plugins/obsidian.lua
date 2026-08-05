@@ -58,5 +58,10 @@ return {
 			workdays_only = false,
 			alias_format = nil,
 		},
+		new_notes_location = "3 Atoms",
+		templates = {
+			enabled = true,
+			folder = "Templates",
+		},
 	},
 }
