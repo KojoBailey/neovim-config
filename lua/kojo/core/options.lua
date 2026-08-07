@@ -14,6 +14,13 @@ vim.opt.signcolumn = "yes" -- Column for special signs (git/LSP/etc.).
 	-- "number": Merge with number column.
 
 vim.opt.wrap = false -- Enable text wrapping.
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "markdown",
+	callback = function()
+		vim.opt_local.wrap = true
+		vim.opt_local.linebreak = true
+	end,
+})
 
 vim.opt.cursorline = true -- Highlight current line.
 vim.opt.cursorlineopt = "number"
