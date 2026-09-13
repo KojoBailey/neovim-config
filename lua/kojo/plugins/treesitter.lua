@@ -18,10 +18,12 @@ return {
 				"bash",
 				"c",
 				"cpp",
+				"haskell",
 				"html",
 				"lua",
 				"markdown",
 				"markdown_inline",
+				"python",
 				"rust",
 				"yaml",
 		})
